@@ -13,7 +13,7 @@ function clicked(){
 }
 
 function Alert() {
-    alert("Logged in as .");
+    alert("Logged in as "+localStorage.getItem("name"));
 }
 
 document.addEventListener("DOMContentLoaded", (event) => {
