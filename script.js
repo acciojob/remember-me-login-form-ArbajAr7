@@ -9,11 +9,11 @@ function clicked(){
             localStorage.setItem("password", password);
 
         }
-        Alert();
+        Alert(localStorage.getItem("name"));
 }
 
-function Alert() {
-    alert("Logged in as "+localStorage.getItem("name"));
+function Alert(name) {
+    alert("Logged in as "+name);
 }
 
 document.addEventListener("DOMContentLoaded", (event) => {
