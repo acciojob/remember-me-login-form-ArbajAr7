@@ -8,7 +8,20 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+	<h1>Login Form</h1>
+	<div id = "form">
+        <label for="checkbox">User Name</label>
+	    <input type="text" placeholder="Username" id="username"><br>
+	
+	    <label for="checkbox">Password</label>
+	    <input type="password" placeholder="Password" id="password"><br>
+	    <input type="checkbox" id="checkbox">
+	    <label for="checkbox">Remember me.</label><br>
+	    <input type="submit" onclick="clicked()" value="Submit" id="submit"><br>
+    </div>
+    <button type="button" onclick="Alert()" id="existing"></button>
+	
+    <script type="text/javascript" src="script.js">
 </script>
 
 </body>
