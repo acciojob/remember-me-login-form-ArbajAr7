@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         {
             document.getElementById("form").style.display = "none";
             document.getElementById("existing").style.display = "block";
-            document.getElementById("existing").innerHTML =`Logged in as.`;
+            document.getElementById("existing").innerHTML =`Login as existing user`;
 
         }else {
             document.getElementById("form").style.display = "block";
