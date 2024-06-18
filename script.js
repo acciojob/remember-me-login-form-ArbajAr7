@@ -7,9 +7,12 @@ function clicked(){
             localStorage.setItem("name", name);
             let password = document.getElementById("password").value;
             localStorage.setItem("password", password);
+			Alert(name);
 
-        }
-        Alert(localStorage.getItem("name"));
+        }else {
+        localStorage.removeItem("name");
+        localStorage.removeItem("password");
+    }
 }
 
 function Alert(name) {
@@ -21,13 +24,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let password = localStorage.getItem("password");
     if(name != null && password != null)
         {
-            document.getElementById("form").style.display = "none";
+            // document.getElementById("form").style.display = "none";
             document.getElementById("existing").style.display = "block";
             document.getElementById("existing").innerHTML =`Login as existing user`;
 
         }else {
             document.getElementById("form").style.display = "block";
             document.getElementById("existing").style.display = "none";
+			document.getElementById("username").value = name;
+	        document.getElementById("password").value = password;
 
         }
   });
