@@ -1,29 +1,20 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
 	<h1>Login Form</h1>
-	<form id = "form">
+	<form id="form" onsubmit="clicked(event)">
         <label for='username'>Username:</label>
 	    <input type="text" placeholder="Username" id="username"><br>
-	
 	    <label for="password">Password:</label>
 	    <input type="password" placeholder="Password" id="password"><br>
 	    <input type="checkbox" id="checkbox">
-	    <label for="checkbox">Remember me:</label><br>
-	    <input type="submit" onclick="clicked()" value="Submit" id="submit"><br>
+	    <label for="checkbox">Remember me</label><br>
+	    <input type="submit" value="Submit" id="submit"><br>
     </form>
-    <button type="button" onclick="Alert()" id="existing"></button>
-	
-    <script type="text/javascript" src="script.js">
-</script>
-
+    <button type="button" onclick="Alert()" id="existing">Login as existing user</button>
+    <script type="text/javascript" src="script.js"></script>
 </body>
-
 </html>
