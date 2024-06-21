@@ -1,4 +1,4 @@
-function clicked(event){
+function clicked(){
     event.preventDefault();
     let checkboxvalue = document.getElementById("checkbox").checked;
     if(checkboxvalue == true) {
@@ -14,10 +14,8 @@ function clicked(event){
 }
 
 function Alert() {
-    let name = localStorage.getItem("name");
-    if(name != null) {
-        alert("Logged in as "+name);
-    }
+    let name = document.getElementById("username").value;
+    alert("Logged in as "+name);
 }
 
 document.addEventListener("DOMContentLoaded", (event) => {
